@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Gallery</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- <link src="script.js"> -->
+</head>
+<style>h1 {
+    text-align: center;
+    font-family: 'Poppins','sans-serif';
+    text-decoration: underline;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+  }
+
+  .container .heading.h1{
+   font-size: 10 ;
+   font-weight: bolder;
+   border-bottom: 5px solid #222 ;
+  }
+  .container .heading .h1 span{
+   font-size: 100 ;
+  }
+
+
+  .container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+
+  .container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+  }
+
+ .container .box .dream img{
+   width: 100%;
+   padding:15px ;
+   border-radius: 5px;
+  }
+  
+  .container .btn{
+    margin: 40px 0 70px 0;
+    background: rgb(20, 18, 18);
+    padding:15px 40px ;
+    border-radius: 5px;
+  }
+  
+  .container .btn a{
+   color: #efe5e5;
+   font-size: 1.2em;
+   text-decoration: none;
+   font-weight: bolder;
+   letter-spacing: 3px;
+   font-family: "Poppins",'sans-serif';
+  }
+
+  @media only screen and (max-width:769px) {
+    .container .box{ 
+    flex-direction: column;
+   
+  }
+  .container .box .dream{
+    width: 100%;
+  }
+
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .dream{
+    overflow: hidden;
+    
+  }
+  .box img{transition: transform 0.3s ease;}
+  .box img:hover{
+    cursor: pointer;
+    transform:scale(1.1);
+  }
+  </style>
+<body>
+    <div class="container">
+        <div class="heading">
+  <h1>Kalavantin-Durg <span>Gallery</span></h1>
+</div>
+<div class="box">
+
+    <div class="dream">
+    <img src="../kalavantin durg/11.jpg" alt="Image 1">
+    <img src="../kalavantin durg/13.jpg" alt="Image 2">
+    <img src="../kalavantin durg/2.jpg" alt="Image 5">
+    <img src="../kalavantin durg/5.jpg" alt="Image 6">
+    <img src="../kalavantin durg/7.jpg" alt="Image 7">
+    <img src="../kalavantin durg/9.jpg" alt="Image 8">
+    <img src="../kalavantin durg/12.jpg" alt="Image 9">
+    <img src="../kalavantin durg/8.jpg" alt="Image 3">
+    <img src="../kalavantin durg/9.jpg" alt="Image 5">
+    
+    
+</div> 
+
+<div class="dream">
+    
+    <img src="../kalavantin durg/5.jpg"alt="Image 4">
+    <img src="../kalavantin durg/vivek.png" alt="Image 5">
+    <img src="../kalavantin durg/10.jpg" alt="Image 6">
+    <img src="../kalavantin durg/5.jpg" alt="Image 1">
+    <img src="../kalavantin durg/2.jpg" alt="Image 2">
+    <img src="../kalavantin durg/9.jpg" alt="Image 3">
+    <img src="../kalavantin durg/13.jpg" alt="Image 7">
+    <img src="../kalavantin durg/12.jpg" alt="Image 8">
+    <img src="../kalavantin durg/6.jpg" alt="Image 4">
+    <img src="../kalavantin durg/vivek.png" alt="Image 9">
+    
+</div> 
+
+<div class="dream">
+    <img src="../kalavantin durg/11.jpg" alt="Image 1">
+    <img src="../kalavantin durg/13.jpg" alt="Image 2">
+    <img src="../kalavantin durg/2.jpg" alt="Image 7">
+    <img src="../kalavantin durg/6.jpg" alt="Image 8">
+    <img src="../kalavantin durg/12.jpg" alt="Image 9">
+    <img src="../kalavantin durg/7.jpg" alt="Image 3">
+    <img src="../kalavantin durg/13.jpg" alt="Image 4">
+    
+    <img src="../kalavantin durg/2.jpg" alt="Image 6">
+    
+</div> 
+
+
+</div>
+<div class="btn">
+    <a  id="backbtn"href="#">Back</a>
+
+</div>
+</div>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  let btn = document.getElementById('backbtn');
+  btn.addEventListener('click',function() {
+    alert("Visiting to main page :) ");
+    window.location.href="Mahuli.html";
+    // btn.style.color="red";
+
+  })
+})
+</script>
+</html>

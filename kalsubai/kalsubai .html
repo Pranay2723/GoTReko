@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>h1 {
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+  }
+
+  .container .heading.h1{
+   font-size: 10 ;
+   font-weight: bolder;
+   border-bottom: 5px solid #222 ;
+  }
+  .container .heading .h1 span{
+   font-size: 100 ;
+  }
+
+
+  .container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+
+  .container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+  }
+
+ .container .box .dream img{
+   width: 100%;
+   padding:15px ;
+   border-radius: 5px;
+  }
+  
+  .container .btn{
+    margin: 40px 0 70px 0;
+    background: rgb(20, 18, 18);
+    padding:15px 40px ;
+    border-radius: 5px;
+  }
+  
+  .container .btn a{
+   color: #efe5e5;
+   font-size: 1.2em;
+   text-decoration: none;
+   font-weight: bolder;
+   letter-spacing: 3px;
+  }
+
+  @media only screen and (max-width:769px) {
+    .container .box{ 
+    flex-direction: column;
+   
+  }
+  .container .box .dream{
+    width: 100%;
+  }
+
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  </style>
+<body>
+    <div class="container">
+        <div class="heading">
+  <h1>KALSUBAI<span>FORT</span></h1>
+</div>
+<div class="box">
+    
+    <div class="dream">
+    <img src="2.jpg" alt="Image 1">
+    <img src="download (10).jpg" alt="Image 2">
+    <img src="download (8).jpg" alt="Image 6">
+    <img src="images (5).jpg" alt="Image 5">
+    <img src="download (10).jpg" alt="Image 8">
+    <img src="images (2).jpg" alt="Image 25">
+    <img src="images (3).jpg" alt="Image 56">
+    
+    
+</div> 
+
+<div class="dream">
+  <img src="images (4).jpg" alt="Image 54">
+  <img src="images.jpg" alt="Image 55">
+  <img src="images.jpg" alt="Image 3">
+  <img src="images (3).jpg" alt="Image 56">
+  <img src="images.jpg" alt="Image 3">
+  <img src="download (8).jpg" alt="Image 6">
+  <img src="download (10).jpg" alt="Image 8">
+  <img src="images.jpg" alt="Image 3">
+    
+</div> 
+
+<div class="dream">
+  <img src="download (11).jpg" alt="Image 9">
+    <img src="images.jpg" alt="Image 3">
+  <img src="download (8).jpg" alt="Image 6">
+  <img src="download (10).jpg" alt="Image 8">
+  <img src="images.jpg" alt="Image 3">
+  <img src="download (8).jpg" alt="Image 6">  
+  <img src="images (4).jpg" alt="Image 54">
+</div> 
+
+
+</div>
+<div class="btn">
+    <a href="#">MORE</a>
+
+</div>
+</div>
+</body>
+</html>

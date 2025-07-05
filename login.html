@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        padding: 0px;
+        margin: 10px;
+        background: url('./images/loginback.jpg') no-repeat center center/cover;
+        /* background-size: 280%; */
+
+    }
+
+    body img {
+        opacity: 0.8;
+    }
+
+    .container {
+        font-family: Lato;
+        display: inline-block;
+        margin: auto;
+        text-align: center;
+        color: white;
+        margin: 0% 25%;
+        border: solid black;
+        width: 50%;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #header {
+        font-family: Lato;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .container input {
+        font-family: Poppins;
+        /* text-align: center; */
+        width: 200px;
+        height: 30px;
+        margin: 10px;
+        padding: 5px 10px;
+        display: inline-block;
+        border: solid 0px;
+        border-radius: 8px;
+    }
+
+    .container input {
+        color: rgb(255, 255, 255);
+        font-family: Poppins;
+        padding: 4px;
+        margin: 5px;
+        border-radius: 4px;
+        border: solid rgb(0, 255, 234) 1px;
+        background-color: transparent;
+    }
+
+    .container input:hover {
+        box-shadow: 0px 0px 10px;
+    }
+
+    /* #place-1 {
+        display: block;
+    } */
+
+    #submit-btn {
+        color: white;
+        /* background-color: rgba(255, 255, 255, 0.703); */
+        font-family: Lato;
+        display: block;
+        margin: 2% 48%;
+        width: 100px;
+        height: 35px;
+        align-items: center;
+        border: solid aqua 1px;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+
+    #submit-btn:hover {
+        box-shadow: 0px 0px 10px rgb(0, 255, 234);
+        cursor: pointer;
+       
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h3 id="header">Login</h3>
+        <form action="index.html">
+            <div id="place-1">
+                <label for="name">Username</label>
+                <input type="text" placeholder="Enter your mail : ">
+            </div>
+            <label for="password">password</label>
+            <input type="password" placeholder="password :">
+            <button id="submit-btn" type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+<script>
+    // let submit = document.getElementById('submit-btn')
+    // submit.addEventListener('click',show())
+    function show() {
+        logged.innerHTML = 'Logged in ! ';
+        logged.style.border = 'solid 0px ';
+        logged.style.background = "transparent";
+        logged.style.fontFamily = 'Lato';
+        logged.style.fontSize = '18px';
+    }
+
+    let logged = document.getElementById('submit-btn');
+    logged.addEventListener('click', show);
+
+</script>
+
+</html>

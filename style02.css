@@ -1,0 +1,878 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(240, 240, 240);
+}
+
+.header h1 {
+    position: relative;
+    display: flex;
+    top: 150px;
+    text-align: center;
+    font-size: 50px;
+    /* left:40%; */
+    align-items: center;
+    justify-content: center;
+
+}
+#mahuli
+{
+    border: solid red;
+   
+}
+#back:hover {
+    cursor: pointer;
+}
+
+#mahuli {
+    color: rgb(1, 249, 59);
+}
+
+.header img {
+    width: 80px;
+    position: relative;
+    top: 70px;
+    left: 35%;
+    z-index: 1;
+}
+#k-title,#mahuli-title{
+    position: relative;
+    top:130px;
+    width:470px;
+    height:150px;
+}
+#camp {
+    font-family: 'Style Script', 'cursive';
+    font-size: 90px;
+    color: white;
+}
+
+.navbar {
+    background-color: rgba(26, 109, 19, 0.87);
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px 20px;
+    font-family: 'Poppins', 'sans-serif';
+    color: white;
+
+}
+
+#log-in {
+    border-radius: 8px;
+    padding: 8px 8px;
+    position: relative;
+    left: 80%;
+}
+
+#log-in:hover {
+    cursor: pointer;
+}
+
+.first-section {
+    background: url('raigad.jpg') no-repeat center center/cover;
+    height: 600px;
+}
+#first-section-k{
+    background: url('kalavantin\ durgM.jpg') no-repeat center center/cover;
+    height: 600px;
+
+}
+#first-section-kalsu{
+    background: url('kalsubai.jpg') no-repeat center center/cover;
+    height: 600px;
+
+}
+#first-section-mahuli{
+    background: url('Mahuli\ 02.jpg') no-repeat center center/cover;
+    height: 600px;
+}
+/* Second Section */
+.main {
+    margin: 10px 100px;
+}
+
+.second-section {
+    position: relative;
+    display: flex;
+}
+
+.second-section h3 {
+    background-color: white;
+    border-left: solid green;
+    width: 50%;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+#gallary {
+    cursor: pointer;
+}
+
+#gallary::before {
+    content: "";
+    background-color: brown;
+    position: absolute;
+    top: 42px;
+    height: 3px;
+    width: 0;
+    border-radius: 8px;
+    transition: 0.5s;
+
+}
+
+#gallary:hover::before {
+    width: 100px;
+}
+                            /* ICONS  */
+
+
+.second {
+    background: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    width: 57.5%;
+
+}
+
+.icon-list {
+    margin: 10px;
+
+}
+
+.img {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+}
+
+.img img {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.text {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    font: 300;
+    color: gray;
+}
+
+
+
+
+
+
+.book-header {
+    background-color: white;
+    height: 100px;
+    position: absolute;
+    display: inline-block;
+    left: 69%;
+    text-align: center;
+    z-index: 1;
+    bottom: 50%;
+    top: 90%;
+    width: 23%;
+    /* text-align: center; */
+    border-radius: 5px;
+    padding: 3px 8px;
+    background-color: brown;
+    color: white;
+    /* border:solid 4px green; */
+}
+
+.book-header h1 {
+    font-size: 30px;
+}
+
+#spanelement {
+    text-decoration: line-through;
+    color: green;
+    padding: 0px 3px;
+}
+
+.left-form {
+    display: inline-block;
+    position: relative;
+    bottom: 150px;
+    left: 70%;
+    background-color: white;
+    height: 380px;
+    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
+    border: solid rgb(128, 43, 0);
+}
+
+
+.info-form {
+    margin: 0px 20px;
+    position: relative;
+    bottom: 20px;
+
+}
+
+.info-form h4 {
+    position: relative;
+    margin: 10px 0px;
+}
+
+.info-form input {
+    margin: 10px 30px;
+    padding: 10px;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.info-form input:focus {
+    border-bottom: solid 3px rgb(24, 143, 13);
+}
+
+#submitbtn {
+    padding: 8px;
+    margin: 5px;
+    background-color: green;
+    color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+#submitbtn:hover {
+    cursor: pointer;
+    background-color: brown;
+}
+
+.higlights {
+    /* position: relative; */
+    border: solid 8px red;
+}
+
+.third-section {
+    /* border:solid 3px green; */
+    display: inline-block;
+    position: relative;
+    bottom: 350px;
+    width: 50%;
+    margin: 0px 100px;
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 5px;
+    border-left: solid green;
+}
+
+.third-section h3 {
+    padding: 10px 0px;
+    display: inline-block;
+}
+
+.third-section li {
+    /* border:solid 2px purple; */
+    padding: 5px 0px;
+}
+
+/* Overview Section */
+
+.fourth-section {
+    position: relative;
+    display: inline-block;
+    bottom: 290px;
+    margin: 5px 100px;
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    border-left: solid green;
+}
+
+.overview {
+    /* border:solid orangered; */
+    display: inline-block;
+    margin: 20px 30px;
+}
+
+.overview h2 {
+    padding: 5px 0px;
+}
+
+#read-more,
+#read-less {
+    position: relative;
+    left: 90%;
+    background-color: white;
+    border: none;
+    display: inline-block;
+    color: green;
+    cursor: pointer;
+}
+
+.overview li span {
+    font-style: bold;
+    color: brown;
+}
+
+/* fifth-section */
+
+.fifth-section {
+    position: relative;
+    bottom: 280px;
+    /* border:solid 2px blue; */
+    display: flex;
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px 100px;
+    border-left: solid green;
+}
+
+.Trek-Itinerary {
+    display: flex;
+    /* width:50%; */
+    margin: 10px 10px;
+    display: inline-block;
+}
+
+.Trek-Itinerary li {
+    padding: 5px 5px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.Trek-Itinerary h2 {
+    padding: 8px 0px;
+}
+
+/* Trek- Map Section */
+
+.trek-map{
+    position: relative;
+    bottom:250px;
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    left: 100px;
+    width: 50%;
+    border-left:solid green ;
+}
+.map img{
+    width: 40px;
+    position: relative;
+    bottom: 15px;
+}
+.map{
+    margin:8px 10px;
+}
+.map table{
+    display: flex;
+    margin:0px 8px;
+    padding:10px 10px;
+}
+.map h2{
+    padding:20px 10px;
+}
+#location{
+    width: 50px;
+
+}
+
+.points tr,td{
+    margin:10px 0px;
+    padding:0px 10px;
+}
+.points{
+    position: relative;
+    bottom: 30px;
+}
+
+/* More-Details Section  */
+.more-details{
+    position: relative;
+    display: flex;
+    bottom:200px;
+    left:100px;
+    width: 50%;
+    background-color: white;
+    border-left:solid green;
+    border-radius: 5px;
+}
+
+.know-before-div h3,ul,li{
+    padding: 10px 10px;
+    margin: 0px 20px;
+}
+#read_more_details,#read_less_details,#read_more_2,#read_less_2{
+    position: relative;
+    left:80%;
+    cursor: pointer;
+    color: green;
+    list-style: none;
+}
+/* 
+.opacity-text{
+    opacity: 0.5;
+} */
+
+/* Review Section */
+
+.review-section{
+    position: relative;
+    bottom:100px;
+    /* display: flex; */
+    /* flex-flow: row nowrap; */
+    background-color: rgb(112, 40, 40);
+    border-radius:5px;
+    /* width:80%; */
+    text-align: center;
+    justify-content: center;
+    margin:0px 100px;
+}
+.review-section h1{
+    text-align: center;
+    color:white;
+    padding:10px 0px;
+}
+.review-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#main-review{
+    background-color: white;
+    border:solid rgb(32, 136, 12);
+    width:45%;
+    margin:15px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+#main-review img{
+    margin:5px 0px;
+    border:solid brown;
+    object-fit: cover;
+    
+
+}
+#profile-photo{
+    width: 90px;
+    border-radius: 50%;
+}
+#review-para{
+    font-size: 14px;
+    padding: 0px 0px;
+    margin:13px 10px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Style labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Style form fields */
+  .customer-review h2{
+    text-align: center;
+    padding:5px 0px
+  }
+  #review-name,
+  #review-email,
+  #review-mobile,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  input[type="submit"]:focus {
+    outline: none;
+  }
+
+/* Footer */
+
+.copyright{
+    /* border:solid red; */
+    position: relative;
+    background-color: rgb(55, 12, 12);
+    border-radius: 5px;
+    width:100%;
+    /* bottom:80px; */
+    height: 400px;
+}
+
+.footer-content{
+    font-family: 'Poppins', 'sans-serif';
+    display:flex; 
+    margin-top: 180px;
+    height: 50%;
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 90px; 
+    position: relative;
+    left:0;
+    /* background-color: whitesmoke; */
+    
+    
+   
+}
+.footer-content li a{
+    text-decoration: none;
+    padding: 2pxz;
+    color: white;
+}
+.footer-content li :hover{
+    /* text-decoration: underline; */
+    cursor: pointer;
+    color: red;
+}
+.footer-content h3:hover{
+    text-decoration: underline;
+}
+
+/*  */
+
+
+.about{
+    width: 25%;
+    /* border: 2px solid black;  */
+    margin: 0px 0px;
+    margin-left: 80px;
+    /* margin: 150px 20px; */
+    text-align: left;
+    padding: 0px 20px;
+    
+}
+.footer-content h3{
+    
+    text-align: center;
+    background-color: green; 
+    color:whitesmoke;
+    border-radius: 25px;
+    margin: 15px 5px;
+    }
+
+.ftravel{
+    width:25%;
+ 
+    margin: 0px 25px;
+ 
+
+    
+}
+.fbrand{
+    
+    width: 25%;
+   
+    margin: 0px 25px;
+   
+    
+}
+.fagent{
+    /* height: 280px; */
+    width: 25%;
+    /* border: 2px solid black;  */
+    margin: 0px 25px;
+    /* margin: 150px 20px; */
+    
+}
+footer{
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 0;
+}
+/* Media query for screen sizes up to 768px */
+@media only screen and (max-width: 768px) {
+    /* ... (existing code for up to 768px) ... */
+
+    .second {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .stick {
+        margin-top: 20px;
+    }
+
+    .book-header,
+    .left-form,
+    .info-form,
+    .third-section,
+    .fourth-section,
+    .trek-map,
+    .know-before-div,
+    .review-holder,
+    .things_to_carry,
+    .fbrand,
+    .fagent {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .fbrand,
+    .fagent {
+        width: 45%;
+    }
+
+    .fbrand {
+        float: left;
+    }
+
+    .fagent {
+        float: right;
+    }
+
+    .points {
+        width: 100%;
+        text-align: center;
+    }
+
+    .points td {
+        width: 25%;
+    }
+
+    .customer-review h2 {
+        font-size: 20px;
+    }
+
+    .review-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #main-review {
+        width: 48%;
+    }
+}
+
+/* Media query for screen sizes up to 480px */
+@media only screen and (max-width: 480px) {
+    /* ... (existing code for up to 480px) ... */
+
+    .second {
+        grid-template-columns: 1fr;
+    }
+
+    .stick {
+        margin-top: 20px;
+    }
+
+    .book-header,
+    .left-form,
+    .info-form,
+    .third-section,
+    .fourth-section,
+    .trek-map,
+    .know-before-div,
+    .review-holder,
+    .things_to_carry,
+    .fbrand,
+    .fagent {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .fbrand,
+    .fagent {
+        width: 100%;
+        float: none;
+    }
+
+    .points {
+        width: 100%;
+        text-align: center;
+    }
+
+    .points td {
+        width: 50%;
+    }
+
+    .customer-review h2 {
+        font-size: 20px;
+    }
+
+    .review-header {
+        display: block;
+    }
+
+    #main-review {
+        width: 100%;
+    }
+
+    .stick {
+        margin-top: 20px; /* Adjust the margin for smaller screens */
+    }
+}
+
+    
+    
+    
+  
+  /* Media query for screen sizes up to 480px */
+  /* @media only screen and (max-width: 480px) {
+    .header h1 {
+      font-size: 25px;
+
+    }
+    .navbar{
+        height: 100px;
+        
+    }
+    #back{
+        margin: 0px 0px;
+    }
+    #log-in{
+        position: absolute;
+        left: 80%;
+    }
+    
+    #mahuli-title,
+    #k-title {
+      width: 250px;
+      height: 60px;
+    }
+  
+    .second-section h3 {
+      font-size: 18px;
+    }
+  
+    .second {
+      margin-top: 20%;  
+      grid-template-columns: repeat(2, 1fr);
+      margin-right: 500px;
+    }
+    .book-header{
+        display: none;
+
+    }
+    .left-form{
+        display: none;
+    }
+    .info-form{
+        display: none;
+    }
+    .third-section{
+        margin-top: 360px;
+        width: 90%;
+        right: 15%;
+        
+    }
+    .fourth-section{
+        width: 90%;
+        right: 15%;
+        
+    }
+    .trek-map{
+        width: 70%;
+        right: 20%;
+    }
+    .points{
+        right: 10%;
+        position: relative;
+
+    }
+    .know-before-div{
+        right: 60%;
+    }
+    .review-holder{
+        /* grid-template-columns: repeat(2,2fr); 
+        width: 500px;
+    }
+
+
+
+
+    
+    .book-header {
+      left: 90%;
+    }
+  
+    .left-form {
+      left: 90%;
+      width: 90%;
+    }
+  
+    .info-form h4 {
+      font-size: 16px;
+    }
+  
+    .info-form input,
+    .info-form textarea {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .fifth-section,
+    .trek-map,
+    .more-details {
+      width: 95%;
+      margin: 10px 2.5%;
+    }
+  
+    .Trek-Itinerary li {
+      font-size: 14px;
+    }
+  
+    .points tr,
+    .points td {
+      padding: 5px 5px;
+    }
+  
+    .customer-review h2 {
+      font-size: 20px;
+    }
+  } 
+    */

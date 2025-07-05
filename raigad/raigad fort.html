@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>h1 {
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+  }
+
+  .container .heading.h1{
+   font-size: 10 ;
+   font-weight: bolder;
+   border-bottom: 5px solid #222 ;
+  }
+  .container .heading .h1 span{
+   font-size: 100 ;
+  }
+
+
+  .container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+
+  .container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+  }
+
+ .container .box .dream img{
+   width: 100%;
+   padding:15px ;
+   border-radius: 5px;
+  }
+  
+  .container .btn{
+    margin: 40px 0 70px 0;
+    background: rgb(20, 18, 18);
+    padding:15px 40px ;
+    border-radius: 5px;
+  }
+  
+  .container .btn a{
+   color: #efe5e5;
+   font-size: 1.2em;
+   text-decoration: none;
+   font-weight: bolder;
+   letter-spacing: 3px;
+  }
+
+  @media only screen and (max-width:769px) {
+    .container .box{ 
+    flex-direction: column;
+   
+  }
+  .container .box .dream{
+    width: 100%;
+  }
+
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  </style>
+<body>
+    <div class="container">
+        <div class="heading">
+  <h1>RAIGAD <span>FORT</span></h1>
+</div>
+<div class="box">
+    
+    <div class="dream">
+    <img src="1.jpg" alt="Image 1">
+    <img src="2.jpg" alt="Image 2">
+    <img src="5.jpg" alt="Image 5">
+    <img src="6.jpg" alt="Image 6">
+    <img src="7.jpg" alt="Image 7">
+    <img src="8.jpg" alt="Image 8">
+    <img src="9.jpg" alt="Image 9">
+    <img src="3.jpg" alt="Image 3">
+    <img src="11.jpg" alt="Image 4">
+    
+</div> 
+
+<div class="dream">
+    
+    <img src="12.jpg" alt="Image 4">
+    <img src="13.jpg" alt="Image 5">
+    <img src="6.jpg" alt="Image 6">
+    <img src="1.jpg" alt="Image 1">
+    <img src="2.jpg" alt="Image 2">
+    <img src="3.jpg" alt="Image 3">
+    <img src="7.jpg" alt="Image 7">
+    <img src="8.jpg" alt="Image 8">
+    <img src="2.jpg" alt="Image 9">
+</div> 
+
+<div class="dream">
+    <img src="11.jpg" alt="Image 1">
+    <img src="2.jpg" alt="Image 2">
+    <img src="7.jpg" alt="Image 7">
+    <img src="8.jpg" alt="Image 8">
+    <img src="13.jpg" alt="Image 9">
+    <img src="3.jpg" alt="Image 3">
+    <img src="4.jpg" alt="Image 4">
+    <img src="5.jpg" alt="Image 5">
+    <img src="6.jpg" alt="Image 6">
+</div> 
+
+
+</div>
+<div class="btn">
+    <a href="#">MORE</a>
+
+</div>
+</div>
+</body>
+</html>

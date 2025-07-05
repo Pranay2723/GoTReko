@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@200&display=swap" rel="stylesheet">
+<style>
+
+    body{
+        background: url('./images/loginback.jpg') no-repeat center center/cover;
+    }
+    .container h2{
+        font-family: Lato;
+        color: beige;
+        text-align: center;
+        margin-top: 5%;
+    }
+    .container{
+        border-radius: 4px;
+        border:solid black;
+        background-color: rgba(0, 0, 0, 0.505);
+        box-shadow:2px 2px 15px rgba(0, 0, 0, 0.505);        
+        width:45%;
+        margin:5% 28%;     
+}
+
+    .main{
+        color: beige;
+    font-family: Poppins;
+    width: 400px;
+    margin: 3% 40% 0%;
+}
+ input{
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    padding:4px;
+    margin:5px;
+    border-radius: 4px;
+    border:solid rgb(0, 255, 234) 1px;
+    background-color: transparent;    
+}
+input:hover{
+    box-shadow: 0px 0px 10px rgba(13, 223, 213, 0.753);
+}
+    
+button{
+    font-family: Poppins;
+    color: White;
+    border:solid 1px rgb(0, 255, 234);
+    background-color: transparent;
+    margin:4% 45%;
+    width: 10%;
+    padding:5px;
+    border-radius:5px}
+
+    button:hover{
+        /* background-color: rgba(190, 250, 249, 0.758); */
+        box-shadow: 0px 0px 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+    <div  class="main">
+        <form>
+            <label for="name">First name :</label>
+            <br>
+            <input type="text">
+            <br>
+            <label for="name">Last name:</label>
+            <br>
+            <input type="text">
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email">
+            <br>
+            <label for="number">Mobile number:</label>
+            <br>
+            <input type="phone"  required>
+            <br>
+            <label for="password">Create Password:</label>
+            <br>
+            <input type="password">
+            <br>
+            <label type="radio">Gender:</label>
+            <br>
+            <input type="radio" name="Gender">Male
+            <input type="radio" name="Gender">Female
+        </form>
+    </div>
+        <button type="submit" id="btn">Submit</button>
+    </div>
+</body>
+<script>
+    function Register(e){
+        alert("Redirected to main page !");
+        window.location.href="index.html";
+        
+        
+    }
+    let a = document.getElementById("btn");
+    a.addEventListener('click',Register);
+    
+
+    </script>
+</html>
